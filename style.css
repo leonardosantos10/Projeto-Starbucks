@@ -3,12 +3,14 @@
     padding: 0; 
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    body { overflow-y: hidden; }
+   
  }
  
  body {
      padding-top: 20px; /* adiciona espaçamento */
      padding-right: 100px;
-     padding-left: 100px;
+     padding-left: 100px;  
  }
  
  .conteudo {
@@ -19,20 +21,24 @@
  }
  
  .caixa-texto {
-     width: 600px;
+     width: 400px;
+     
  }
  
  .caixa-imagem {
-     width: 600px;
+     width: 400px;
      display: flex;
-     justify-content: flex-end; /* joga item todo pro lado */
-     margin-top:350px;
+     justify-content: end; /* joga item todo pro lado */
+     margin-top:220px;
+     margin-right: 100px;
+     cursor: pointer;
  }
  
  .menu {
      display: flex;
      justify-content: center; /* joga itens para o centro */
-     margin-top: 56px;
+     position: relative;
+     bottom: 79px;  
      
      
  }
@@ -48,7 +54,7 @@
  
  h2 {
      font-size: 60px;
-     font-weight: 500px;
+     font-weight: 500;
      font-family: 'roboto', sans-serif;
  }
  
@@ -61,16 +67,18 @@
  p {
      font-size: 16px;
      margin-top: 20px;
-     margin-bottom: 30px;
+     margin-bottom: 20px;
  }
  
  .logo {
-     width: 80px;
+     width: 50px;
  }
  
  .starbucks {
-     width: 340px;
+     width: 280px;
      z-index: 2;        /* define se o item está a frente ou atrás */
+     position: relative;
+     left: 140px;
  }
  
  .copo-pequeno {
@@ -88,6 +96,7 @@
      background: #017143;
      width: 100%;
      height: 100%;
+     height: 1000px;
      position: absolute;
      top: 0;
      left: 0;
